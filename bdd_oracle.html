@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <script src="https://kit.fontawesome.com/84d823cda2.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="www/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Elian Richard - Oracle et talend</title>
+</head>
+<body>
+    <header class="header_oracle">
+        <h1 id="mainpage_title">ETL Talend et PowerBI</h1>
+    </header>
+
+    <main>
+
+        <div class="objectifs_block">
+            <h2 class="objectifs_title">Objectifs de la mission</h2>
+            <p class="objectifs_text">
+                Lors d'un projet encadrée par l'IUT, nous devions alimenter une base de données ORACLE en utilisant l'ETL Talend. Ainsi Nous
+                pouvions dévelloper un tableau de bord sur les liens entre les stations de vélos et la météo.
+            </p>
+        </div>
+
+        <div class="deroulement_block">
+            <h2 class="deroulement_title">Déroulement de la mission</h2>
+            <p class="deroulement_text" style="padding: 2em;">
+                Dans un premier temps, nous avons reçu les données servant à alimenter nos tables Oracle. Elles proviennent d’API publiques (trois au total). Ces API contenaient un nombre important de colonnes et de données ; il fallait donc filtrer celles qui nous intéressaient.
+                Nous disposions de données concernant la météo et la fréquentation des stations de vélos pour les villes de Nantes et de Marseille, depuis le début de l’année 2025.
+                
+                <br><br>
+                
+                Pour les importer dans Oracle, nous devions passer par le logiciel ETL Talend, qui permet d’intégrer des données avec un traitement et une mise en forme adaptés à nos besoins.
+                Ce logiciel s’organise sous la forme de "jobs", eux-mêmes composés de blocs remplissant chacun une fonction spécifique, s’emboîtant les uns à la suite des autres.
+                
+                <br><br>
+                
+                Voici la liste de nos jobs Talend.
+                
+                <br><br>
+                
+                <p style="text-align: center;"><i>Liste des jobs</i></p><br>
+                
+                <img src="www/JOB_MAIN.png" style="width: 863px; height: 602px; display: block; margin-left: auto; margin-right: auto;">
+                <br><br>
+                <img src="www/JOB_VELO_1.png" style="width: 656px; height: 647px; display: block; margin-left: auto; margin-right: auto;">
+                <img src="www/JOB_VELO_2.png" style="width: 791px; height: 639px; display: block; margin-left: auto; margin-right: auto;">
+                
+                <br><br>
+                Une fois ces jobs lancés, nous avons pu connecter notre tableau de bord à la base de données.<br>
+                Pour le réaliser, nous avons commencé par une page présentant des informations générales concernant la météo des
+                villes de Nantes et Marseille. Puis, lorsqu’on sélectionne une station, un bouton permet d’effectuer un drill-down, c’est-à-dire un
+                "zoom" sur la station choisie et les informations la concernant.
+
+                <br><br>
+                <p style="text-align: center;"><i>Tableau de bord réalisé</i></p><br>
+                <img src="www/TDB_velo.png" style="width: 50%; height: 50%; display: block; margin-left: auto; margin-right: auto;">
+            </p>
+        </div>
+        
+
+        <div class="competences_block">
+            <h2 class="competences_title">Compétences utilisés</h2>
+            <nav class="comp_nav">
+                <span class="comp_span">
+                    <i class="fa-solid fa-chart-pie" style="font-size: 5em;"></i>
+                    <p class="comp_txt">Statistiques</p>
+                </span>
+                <span class="comp_span">
+                    <i class="fa-solid fa-gauge" style="font-size: 5em;"></i>
+                    <p class="comp_txt">Tableau de bord <br>Power BI</p>
+                </span>
+                <span class="comp_span">
+                    <i class="fa-solid fa-database" style="font-size: 5em;"></i>
+                    <p class="comp_txt">Base de données relationnelles <br /> ETL Talend</p>
+                </span> 
+              </nav>
+        </div>
+
+    </main>
+
+    <footer>
+        <h2 class="footer_title">Mes liens et contact</h2>
+            <p class="footer_text">E-mail : elianrichard.pro@gmail.com</p>
+            <p class="footer_text">LinkedIn : www.linkedin.com/in/elian-richard-18a463298</p>
+            <p class="footer_text">Téléphone : +33 6 08 06 58 39 </p>
+            <p class="footer_text">GitHub : https://github.com/ElianRichardPro</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <script src="https://kit.fontawesome.com/84d823cda2.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="www/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Elian Richard - Oracle et talend</title>
+</head>
+<body>
+    <header class="header_oracle">
+        <h1 id="mainpage_title">Développement ETL python</h1>
+    </header>
+
+    <main>
+
+        <div class="objectifs_block">
+            <h2 class="objectifs_title">Objectifs de la mission</h2>
+            <p class="objectifs_text">
+                Lors d'un projet encadrée par l'IUT, nous devions, à l'aide d'un code construit en Python, réalisé un scrapping de page web afin d'alimenter
+                des tables MySQL, pour ensuite interrogé cette table sur une page web dans l'objectif de crée des visuels en JavaScript.
+            </p>
+        </div>
+
+        <div class="deroulement_block">
+            <h2 class="deroulement_title">Déroulement de la mission</h2>
+            <p class="deroulement_text" style="padding: 2em;">
+                Dans un premier temps, nous avons développé avec le langage de programmation Python et la librairie Selenium, permettant de récupérer les données de pages web, comme les prix de certains articles.
+                Après avoir laissé le programme tourner 12 h, nous avions récolté plus de 12 000 articles provenant du site Boulanger, avec les informations associées comme le prix ou la catégorie.
+                
+                <br><br>
+                
+                Pendant ce temps, nous avons réalisé deux modèles de données Oracle, l'un pour la production, l'autre pour le décisionnel.
+                Nous avions aussi récolté les devises et les valeurs de change de celles-ci via un autre code Python récupérant les données d'une API, afin de mettre à jour
+                les prix des produits dans les tables.
+                
+                <br><br>
+                
+                Une fois cela réalisé, nous avons rempli une base de données MySQL créée au préalable, en passant par un ETL lui aussi codé en Python.
+                Pour le faire, nous avons dû passer par une base Access. En effet, il n’était pas possible de transposer directement depuis Oracle, mais un code VBA produit par notre
+                professeur permettait de le faire.
+                
+                <br><br>
+                
+                Une fois terminé, nous avons alimenté une page web avec notre base de données organisée en cube. Nous avons pu développer des visuels l'utilisant.
+                
+                <p style="text-align: center;"><i>Organisation du projet (numérotée par ordre de rendu)</i></p><br>
+                
+                <img src="www/schema_explication.png" style="width: 550px; height: 308px; display: block; margin-left: auto; margin-right: auto;">
+                
+                <br><br>
+                <p style="text-align: center;"><i>Prototype de la page Web</i></p><br>
+
+                <img src="www/PageWeb_JS.png">
+            </p>
+            
+        </div>
+
+        <div class="competences_block">
+            <h2 class="competences_title">Compétences utilisés</h2>
+            <nav class="comp_nav">
+                <span class="comp_span" >
+                    <i class="fa-brands fa-js" style="font-size: 5em;"></i>
+                    <p class="comp_txt">Javascript<br />HTML et CSS</p>
+                </span>
+                <span class="comp_span">
+                    <i class="fa-brands fa-php" style="font-size: 5em;"></i>
+                    <p class="comp_txt">PHP</p>
+                </span>
+                <span class="comp_span">
+                    <i class="fa-brands fa-python" style="font-size: 5em;"></i>
+                    <p class="comp_txt">Python <br /> Librairie data science</p>
+                </span>
+                <span class="comp_span">
+                    <i class="fa-solid fa-database" style="font-size: 5em;"></i>
+                    <p class="comp_txt">Base de données relationnelles <br /> ETL & SQL</p>
+                </span> 
+                <span class="comp_span">
+                    <i class="fa-solid fa-gauge" style="font-size: 5em;"></i>
+                    <p class="comp_txt">Tableau de bord<br />Power BI & R Shiny</p>
+                </span>
+              </nav>
+        </div>
+
+    </main>
+
+    <footer>
+        <h2 class="footer_title">Mes liens et contact</h2>
+            <p class="footer_text">E-mail : elianrichard.pro@gmail.com</p>
+            <p class="footer_text">LinkedIn : www.linkedin.com/in/elian-richard-18a463298</p>
+            <p class="footer_text">Téléphone : +33 6 08 06 58 39 </p>
+            <p class="footer_text">GitHub : https://github.com/ElianRichardPro</p>
+    </footer>
+
+</body>
+</html>
