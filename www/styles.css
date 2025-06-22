@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all .1s ease-in-out;
+}
+
+body {
+    background-color: #131313;
+}
+
+header {
+    display: flex;
+    padding: 5em 5em 5em 5em;
+    background:
+      radial-gradient(#1d1d1d 49%,#0000 50%) calc(13px/-2) calc(13px/2),
+      repeating-conic-gradient(from 45deg,#131313 0 25%,#0000 0 50%)
+        calc(13px/2) calc(13px/2),
+      radial-gradient(#1d1d1d 49%,#0000 50%),radial-gradient(#1d1d1d 49%,#0000 50%) 13px 13px #131313;
+    background-size: calc(2*13px) calc(2*13px);
+    color: white;
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.mainpage_piechartlg {
+    height: 5em;
+    width: 5em;
+    color: aliceblue;
+}
+
+.bio_block {
+    color: aliceblue;
+    padding: 3em 2em 2em 2em;
+}
+
+.project_title {
+    margin: 1.5em;
+    color: aliceblue;
+}
+
+.project_block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    justify-content: center;
+    align-content: center;
+    margin: 2em;
+}
+    
+.internship_block { 
+    grid-area: 1 / 1;
+    padding: 5em;
+    background:
+      radial-gradient(#161616 24%,#0000 25%),
+      radial-gradient(#282828 30%,#0000 32%) calc(32px/2) calc(32px/2),
+      repeating-conic-gradient(from 30deg,#131313 0 30deg,#1d1d1d 0 90deg);
+    background-size: 32px 32px;
+ }
+
+.bank_block { 
+    grid-area: 1 / 2;
+    padding: 5em;
+    background: repeating-radial-gradient(circle, transparent, transparent 7.3px, #1d1d1d 7.3px, #1d1d1d 9.5px), repeating-radial-gradient(circle, transparent, transparent 7.3px, #1d1d1d 7.3px, #1d1d1d 9.5px), #131313;
+    background-size: 42px 42px;
+    background-position: 0 0, 21px 21px, 42px 21px;
+    background-color: #131313;
+ }
+
+.ETL_block { 
+    grid-area: 2 / 1;
+    padding: 5em;
+    background:
+      radial-gradient(50% 50% at 100% 0,#131313 0%  5% ,#1d1d1d 6%  15%,#131313 16% 25%,#1d1d1d 26% 35%,#131313 36% 45%,
+       #1d1d1d 46% 55%,#131313 56% 65%,#1d1d1d 66% 75%,#131313 76% 85%,#1d1d1d 86% 95%,
+       #0000 96%),
+      radial-gradient(50% 50% at 0 100%,#131313 0%  5% ,#1d1d1d 6%  15%,#131313 16% 25%,#1d1d1d 26% 35%,#131313 36% 45%,
+       #1d1d1d 46% 55%,#131313 56% 65%,#1d1d1d 66% 75%,#131313 76% 85%,#1d1d1d 86% 95%,
+       #0000 96%),
+      radial-gradient(50% 50%,#131313 0%  5% ,#1d1d1d 6%  15%,#131313 16% 25%,#1d1d1d 26% 35%,#131313 36% 45%,
+       #1d1d1d 46% 55%,#131313 56% 65%,#1d1d1d 66% 75%,#131313 76% 85%,#1d1d1d 86% 95%,
+       #0000 96%),
+      radial-gradient(50% 50%,#131313 0%  5% ,#1d1d1d 6%  15%,#131313 16% 25%,#1d1d1d 26% 35%,#131313 36% 45%,
+       #1d1d1d 46% 55%,#131313 56% 65%,#1d1d1d 66% 75%,#131313 76% 85%,#1d1d1d 86% 95%,
+       #0000 96%) 21px 21px;
+    background-size: 42px 42px;
+    background-color: #131313;
+ }
+
+.talend_block { 
+    grid-area: 2 / 2;
+    padding: 5em;
+    background-image:  repeating-radial-gradient(circle at 0 0, transparent 0, #131313 21px), repeating-linear-gradient(#1d1d1d, #1d1d1d);
+    background-color: #131313;
+ }
+
+ .internship_block:hover, .talend_block:hover, .ACCESS_block:hover, .politics_block:hover, .ETL_block:hover, .bank_block:hover{
+    transform: scale(1.05);
+ }
+
+ .comp_nav{
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .comp_span {
+    color: aliceblue;
+    margin: 1em 2em 2em 2em;
+    text-align: center;
+    transform: scale(1);
+}
+
+.comp_txt {
+    padding: 1.05em;
+}
+
+footer {
+ height: 10em;
+ background-color: #2c2c2c;
+ color: white;
+ padding: 1em 2em 1em 2em;
+}
+
+.footer_text {
+    margin: 1em 0em 1em 0em;
+}
+
+.header_erp {
+    display: flex;
+    padding: 5em 5em 5em 5em;
+    background:
+    radial-gradient(#161616 24%,#0000 25%),
+    radial-gradient(#282828 30%,#0000 32%) calc(32px/2) calc(32px/2),
+    repeating-conic-gradient(from 30deg,#131313 0 30deg,#1d1d1d 0 90deg);
+    background-size: 32px 32px;
+    color: white;
+    font-size: 1.5em;
+}
+
+.header_bank {
+    display: flex;
+    padding: 5em 5em 5em 5em;
+    background: repeating-radial-gradient(circle, transparent, transparent 7.3px, #1d1d1d 7.3px, #1d1d1d 9.5px), repeating-radial-gradient(circle, transparent, transparent 7.3px, #1d1d1d 7.3px, #1d1d1d 9.5px), #131313;
+    background-size: 42px 42px;
+    background-position: 0 0, 21px 21px, 42px 21px;
+    background-color: #131313;
+    color: white;
+    font-size: 1.5em;
+
+}
+
+.header_oracle {
+    display: flex;
+    padding: 5em 5em 5em 5em;
+    background: repeating-radial-gradient(circle, transparent, transparent 7.3px, #1d1d1d 7.3px, #1d1d1d 9.5px), repeating-radial-gradient(circle, transparent, transparent 7.3px, #1d1d1d 7.3px, #1d1d1d 9.5px), #131313;
+    background-image:  repeating-radial-gradient(circle at 0 0, transparent 0, #131313 21px), repeating-linear-gradient(#1d1d1d, #1d1d1d);
+    background-color: #131313;
+    color: white;
+    font-size: 1.5em;
+}
+
+.objectifs_block, .deroulement_block, .competences_block {
+    color: aliceblue;
+    padding: 2em;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.objectifs_title, .deroulement_title, .competences_title{
+    padding: 1em 0em 1em 0em;
+}
